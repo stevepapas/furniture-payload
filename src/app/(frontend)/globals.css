@@ -16,6 +16,12 @@
   --accent-subtle: rgba(37, 99, 235, 0.10);
   --border: rgba(255, 255, 255, 0.08);
   --muted: #94a3b8;
+
+  /* Legacy aliases kept for page.tsx components */
+  --dark: #0f172a;
+  --white: #ffffff;
+  --light-bg: #0f172a;
+  --text-muted: #94a3b8;
 }
 
 html,

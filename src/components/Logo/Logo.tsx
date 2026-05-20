@@ -1,16 +1,12 @@
-import clsx from 'clsx'
 import React from 'react'
 
 interface Props {
   className?: string
-  loading?: 'lazy' | 'eager'
-  priority?: 'auto' | 'high' | 'low'
 }
 
-export const Logo = (props: Props) => {
-  const { className } = props
+export function Logo({ className }: Props) {
   return (
-    <span className={clsx('font-sans text-xl font-semibold tracking-tight text-white', className)}>
+    <span className={['text-xl font-semibold tracking-tight text-white', className].filter(Boolean).join(' ')}>
       Aetherfield
     </span>
   )

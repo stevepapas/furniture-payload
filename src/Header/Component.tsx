@@ -1,10 +1,7 @@
-'use client'
+import React from 'react'
 import Link from 'next/link'
-import React, { useState } from 'react'
 
-export function HeaderClient() {
-  const [open, setOpen] = useState(false)
-
+export function SiteHeader() {
   return (
     <header className="relative z-20 bg-[#0f172a] border-b border-white/[0.08]">
       <div className="max-w-7xl mx-auto px-12 py-5 flex justify-between items-center">
@@ -24,12 +21,12 @@ export function HeaderClient() {
           >
             About
           </Link>
-          <button
-            onClick={() => setOpen(!open)}
+          <Link
+            href="/admin"
             className="ml-3 px-5 py-2 rounded-lg bg-blue-600 text-white text-sm font-medium hover:bg-blue-700 transition-colors"
           >
             Get in touch
-          </button>
+          </Link>
         </nav>
       </div>
     </header>
