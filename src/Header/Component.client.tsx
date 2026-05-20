@@ -11,8 +11,8 @@ interface HeaderClientProps {
 
 export const HeaderClient: React.FC<HeaderClientProps> = ({ data }) => {
   return (
-    <header className="container relative z-20">
-      <div className="py-6 flex justify-between items-center">
+    <header className="relative z-20 bg-[#0f172a] border-b border-white/[0.08]">
+      <div className="max-w-7xl mx-auto px-12 py-5 flex justify-between items-center">
         <Link href="/">
           <Logo />
         </Link>

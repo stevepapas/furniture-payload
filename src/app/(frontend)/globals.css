@@ -9,19 +9,20 @@
 }
 
 :root {
-  --dark: #3b3b3b;
-  --white: #ffffff;
-  --light-bg: #e5e5e5;
+  --background: #0f172a;
+  --foreground: #ffffff;
   --card-bg: #ffffff;
-  --accent: #ff4f00;
-  --text-muted: #888888;
+  --accent: #2563eb;
+  --accent-subtle: rgba(37, 99, 235, 0.10);
+  --border: rgba(255, 255, 255, 0.08);
+  --muted: #94a3b8;
 }
 
 html,
 body {
   font-family: 'Epilogue', sans-serif;
-  background-color: var(--light-bg);
-  color: var(--dark);
+  background-color: var(--background);
+  color: var(--foreground);
   min-height: 100vh;
 }
 

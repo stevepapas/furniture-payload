@@ -10,7 +10,7 @@ interface Props {
 export const Logo = (props: Props) => {
   const { className } = props
   return (
-    <span className={clsx('font-serif text-2xl font-bold tracking-tight', className)}>
+    <span className={clsx('font-sans text-xl font-semibold tracking-tight text-white', className)}>
       Aetherfield
     </span>
   )
