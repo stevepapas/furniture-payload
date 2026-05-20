@@ -11,6 +11,11 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  transpilePackages: [
+    '@payloadcms/ui',
+    '@payloadcms/richtext-lexical',
+    '@payloadcms/next',
+  ],
   images: {
     remotePatterns: [
       { protocol: 'https', hostname: '**' },
