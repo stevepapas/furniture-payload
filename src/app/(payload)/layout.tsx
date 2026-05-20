@@ -1,14 +1,13 @@
 import React from 'react'
+import { RootLayout } from '@payloadcms/next/layouts'
+import config from '@payload-config'
 
 export const metadata = {
   description: 'Payload Admin',
   title: 'Payload Admin',
 }
 
-export default async function Layout({ children }: { children: React.ReactNode }) {
-  return (
-    <html lang="en" suppressHydrationWarning>
-      <body>{children}</body>
-    </html>
-  )
-}
+const Layout = ({ children }: { children: React.ReactNode }) =>
+  RootLayout({ children, config })
+
+export default Layout
