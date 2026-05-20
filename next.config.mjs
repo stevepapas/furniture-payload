@@ -10,16 +10,12 @@ const nextConfig = {
   outputFileTracingRoot: path.resolve(dirname),
   images: {
     remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: '**',
-      },
-      {
-        protocol: 'http',
-        hostname: 'localhost',
-      },
+      { protocol: 'https', hostname: '**' },
+      { protocol: 'http', hostname: 'localhost' },
     ],
   },
 }
 
-export default withPayload(nextConfig)
+export default withPayload(nextConfig, {
+  configPath: path.resolve(dirname, 'payload.config.ts'),
+})
