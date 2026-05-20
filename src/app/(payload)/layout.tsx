@@ -3,6 +3,7 @@ import { handleServerFunctions, RootLayout } from '@payloadcms/next/layouts'
 import React from 'react'
 import config from '@payload-config'
 import { importMap } from './admin/importMap.js'
+import '@payloadcms/ui/styles.css'
 
 export const metadata = {
   description: 'Payload Admin',
