@@ -8,15 +8,35 @@ export function PortfolioHero({ profile }: { profile: Profile }) {
   return (
     <div
       style={{
-        background: '#3b3b3b',
+        background: '#0f172a',
         color: '#fff',
         padding: '3rem 2.5rem',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'flex-end',
         minHeight: '50vh',
+        borderRight: '1px solid rgba(255,255,255,0.08)',
       }}
     >
+      <div
+        style={{
+          display: 'inline-flex',
+          alignItems: 'center',
+          gap: '0.5rem',
+          padding: '0.375rem 0.875rem',
+          borderRadius: '0.5rem',
+          background: 'rgba(37,99,235,0.10)',
+          border: '2px solid #2563eb',
+          color: '#93c5fd',
+          fontSize: '0.8rem',
+          fontWeight: 500,
+          marginBottom: '2rem',
+          width: 'fit-content',
+        }}
+      >
+        <span style={{ width: 8, height: 8, borderRadius: '50%', background: '#3b82f6', flexShrink: 0, display: 'inline-block' }} />
+        Available for new projects
+      </div>
       <h1
         style={{
           fontFamily: "'Epilogue', sans-serif",
@@ -27,21 +47,19 @@ export function PortfolioHero({ profile }: { profile: Profile }) {
           marginBottom: '1.5rem',
         }}
       >
-        Portfolio
-        <br />
-        {profile.name || 'Template'}
+        {profile.name || 'Aetherfield'}
       </h1>
       <p
         style={{
           fontFamily: "'Epilogue', sans-serif",
           fontWeight: 500,
-          fontSize: 'clamp(1rem, 2vw, 2rem)',
+          fontSize: 'clamp(1rem, 2vw, 1.5rem)',
           lineHeight: 1.3,
           maxWidth: 480,
-          color: 'rgba(255,255,255,0.8)',
+          color: 'rgba(148,163,184,1)',
         }}
       >
-        {profile.role || 'Visual Designer'}
+        {profile.role || 'Design & development studio'}
       </p>
     </div>
   )

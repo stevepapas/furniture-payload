@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&display=swap');
 
 *,
@@ -17,7 +21,7 @@
   --border: rgba(255, 255, 255, 0.08);
   --muted: #94a3b8;
 
-  /* Legacy aliases kept for page.tsx components */
+  /* Legacy aliases for existing page.tsx components */
   --dark: #0f172a;
   --white: #ffffff;
   --light-bg: #0f172a;
