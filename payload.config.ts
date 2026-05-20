@@ -9,6 +9,7 @@ import { Media } from './src/collections/Media'
 import { Projects } from './src/collections/Projects'
 import { Skills } from './src/collections/Skills'
 import { Users } from './src/collections/Users'
+import { HeaderGlobal } from './src/globals/Header'
 import { Profile } from './src/globals/Profile'
 
 const filename = fileURLToPath(import.meta.url)
@@ -22,7 +23,7 @@ export default buildConfig({
     },
   },
   collections: [Media, Projects, Skills, Users],
-  globals: [Profile],
+  globals: [HeaderGlobal, Profile],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',
   typescript: {
